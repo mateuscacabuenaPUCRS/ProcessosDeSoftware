@@ -1,0 +1,161 @@
+body.modal-open {
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Correção para permitir o clique no botão de fechar dentro do modal */
+body.modal-open .modal-content {
+  pointer-events: auto;
+}
+
+
+
+/* estilo do modal */
+.modal, .modal-pizza {
+  max-height: 600px;
+  padding: 25px;
+  padding: 2%;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+
+
+/* estilo do conteúdo do modal */
+.modal-content { 
+  gap: 5px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centering the content horizontally */
+  align-items: center; /* Centering the content vertically */
+}
+
+
+/* estilo do botão de fechar */
+#close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* estilo do botão Limpar Carrinho */
+#clear-cart {
+  margin-top: 20px;
+}
+
+.cart-img
+{
+  width: 35px;
+}
+
+
+#cart-icon {
+  align-self: center;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#cart-icon:hover #cart-modal {
+  display: block;
+}
+
+#cart-icon .fa-shopping-cart {
+  font-size: 24px;
+}
+
+#cart-count {
+  position: absolute;
+  top: 28px;
+  right: -6px;
+  background-color: #FF6B00;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.cart {
+  width: 3vw;
+}
+
+
+
+
+.product{
+  gap: 1%;
+  height: 8rem;
+  width: 100%;
+  max-width: 800px;
+  align-items: center;
+  border-bottom: solid 1px lightgray;
+  border-top: solid 1px lightgray;
+  display: flex;
+  flex-direction: row;
+}
+
+.products{
+  padding: 0 auto;
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+
+.Title-description{
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.Title-description h1{
+  font-size: 18px;
+}
+
+.Title-description p{
+  font-size: 12px;
+}
+
+.close,.close-pizza{
+  justify-content: center;
+  align-self:flex-end;
+  display: flex;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: lightgray;
+  border-radius: 50%;
+  cursor: pointer;
+}

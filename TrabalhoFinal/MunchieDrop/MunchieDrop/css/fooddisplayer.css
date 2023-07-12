@@ -1,0 +1,28 @@
+.food-displayer-container {
+    overflow-x: auto;
+    white-space: nowrap; /* Evita quebrar a linha */
+    padding: 25px;
+  }
+  
+  .food-displayer {
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  
+  .food-item {
+    align-content: center;
+    margin-right: 10px;
+  }
+  
+  #foods-container{
+    align-self: center;
+    width: 70rem;
+    padding:2vh;
+  }
+
+  #foods-container .page-title {
+    color: #FF9900;
+  }
+  

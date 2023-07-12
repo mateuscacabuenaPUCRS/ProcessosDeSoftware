@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Munchie Drop</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/modal.css" rel="stylesheet" type="text/css" />
+  <link href="css/header.css" rel="stylesheet" type="text/css" />
+  <link href="css/NewCss.css" rel="stylesheet" type="text/css" />
+  <link href="css/fooddisplayer.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="imgs/icon.png">
+</head>
+
+<body>
+  <header class="pgae-header">
+    <div class="logo">
+      <img src="imgs/logoMunchie.png" alt="Munchie logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" id="atual">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="restaurants.html">Restaurants</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <divc class="checkout-cart">
+      <!-- ícone do carrinho -->
+      <div id="cart-icon">
+        <a href="#">
+          <img class="cart-img" src="imgs/cart.png" alt="Cart Icon">
+          <span id="cart-count"></span>
+        </a>
+      </div>
+      <div class="checkout">
+        <a href="#checkout">Check-out Order</a>
+      </div>
+      </div>
+
+  </header>
+
+
+  <div class="search-container">
+    <input type="text" id="search-bar" placeholder="Search food...">
+  </div>
+
+  <div id="foods-container">
+
+    <h1 class="page-title">Popular Restaurants</h1>
+
+    <div class="food-displayer-container">
+      <div class="food-displayer">
+        <!-- Inicio da div -->
+
+        <div class="NovoContainer" id="mcdonalds-container">
+          <img class="restaurants-imgs" src="imgs/restaurants/mcdonalds.webp" alt="mcdonalds" id="photo">
+          <div class="buttons">
+            <div class="buttons-align">
+              <div class="horizontal-buttons">
+                <button type="button" class="foodplace-btn">McDonalds's</button>
+              </div>
+              <div class="vertical-buttons">
+                <button type="button" class="favorite-btn"><p alt="Favoritar">&hearts;</button>
+                <button type="button" class="right-arrow-btn"><img class="button-imgs" src="imgs/arrow.png"
+                    alt="arrow"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="NovoContainer" id="dominos-container">
+          <img class="restaurants-imgs" src="imgs/restaurants/Dominos.webp" alt="dominos" id="photo">
+          <div class="buttons">
+            <div class="buttons-align">
+              <div class="horizontal-buttons">
+                <button type="button" class="foodplace-btn">Dominos's</button>
+              </div>
+              <div class="vertical-buttons">
+                <button type="button" class="favorite-btn"><p alt="Favoritar">&hearts;</button>
+                <button type="button" class="right-arrow-btn"><img class="button-imgs" src="imgs/arrow.png"
+                    alt="arrow"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="NovoContainer" id="KFC-container">
+          <img class="restaurants-imgs" src="imgs/restaurants/KFC.webp" alt="dominos" id="photo">
+          <div class="buttons">
+            <div class="buttons-align">
+              <div class="horizontal-buttons">
+                <button type="button" class="foodplace-btn">KFC</button>
+              </div>
+              <div class="vertical-buttons">
+                <button type="button" class="favorite-btn"><p alt="Favoritar">&hearts;</button>
+                <button type="button" class="right-arrow-btn"><img class="button-imgs" src="imgs/arrow.png"
+                    alt="arrow"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="NovoContainer" id="Outback-container">
+          <img class="restaurants-imgs" src="imgs/restaurants/Outback.webp" alt="dominos" id="photo">
+          <div class="buttons">
+            <div class="buttons-align">
+              <div class="horizontal-buttons">
+                <button type="button" class="foodplace-btn">Outback</button>
+              </div>
+              <div class="vertical-buttons">
+                <button type="button" class="favorite-btn"><p alt="Favoritar">&hearts;</button>
+                <button type="button" class="right-arrow-btn"><img class="button-imgs" src="imgs/arrow.png"
+                    alt="arrow"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="NovoContainer" id="StarBucks-container">
+          <img class="restaurants-imgs" src="imgs/restaurants/StarBucks.webp" alt="dominos" id="photo">
+          <div class="buttons">
+            <div class="buttons-align">
+              <div class="horizontal-buttons">
+                <button type="button" class="foodplace-btn">StarBucks</button>
+              </div>
+              <div class="vertical-buttons">
+                <button type="button" class="favorite-btn"><p alt="Favoritar">&hearts;</button>
+                <button type="button" class="right-arrow-btn"><img class="button-imgs" src="imgs/arrow.png"
+                    alt="arrow"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="NovoContainer" id="Wendys-container">
+          <img class="restaurants-imgs" src="imgs/restaurants/Wendys.webp" alt="dominos" id="photo">
+          <div class="buttons">
+            <div class="buttons-align">
+              <div class="horizontal-buttons">
+                <button type="button" class="foodplace-btn">Wendy's</button>
+              </div>
+              <div class="vertical-buttons">
+                <button type="button" class="favorite-btn"><p alt="Favoritar">&hearts;</button>
+                <button type="button" class="right-arrow-btn"><img class="button-imgs" src="imgs/arrow.png"
+                    alt="arrow"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Fim da div -->
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+  <div id="foods-container">
+
+    <h1 class="page-title">Favorites</h1>
+
+    <div class="food-displayer-container">
+      <div class="food-displayer" id="favorites-container">
+
+        <!-- Inicio da div -->
+
+
+        <!-- Fim da div -->
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+
+</body>
+
+
+</html>
